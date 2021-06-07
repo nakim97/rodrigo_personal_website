@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: monospace;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Style nav bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000e1b;
+  color: white;
+}
+/* Style navbar title */
+.nav-title {
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+/* Style navbar ul  */
+.nav-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style navbar li */
+.nav-links li {
+  list-style: none;
+}
+
+/* Style navbar li a */
+.nav-links li a {
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  color: white;
+  font-size: 15px;
+}
+
+/* Style the main header landing page */
+#intro-header {
+  display: flex;
+  padding-top: 100px;
+  color: white;
+  background-color: #000e1b;
+  height: 70vh;
+}
+.intro-blurb {
+  padding-right: 350px;
+  padding-left: 100px;
+  margin-top: 80px;
+}
+
+#intro-header h1 {
+  font-size: 60px;
+}
+#intro-header h2 {
+  font-size: 70px;
+}
+#profile-img {
+  width: 400px;
+  height: 450px;
+  margin-bottom: 100px;
+}
+
+#resumeBtn {
+  outline: none;
+  text-decoration: none;
+  padding: 5px;
+  margin-top: 20px;
+  letter-spacing: 5px;
+  font-size: 30px;
+  cursor: pointer;
+}
+/* Style the biography section */
+#bio {
+  background-color: #ececec;
+  color: black;
+  height: 40vh;
+}
+
+#bio h1,
+#bio p {
+  padding-left: 100px;
+}
+
+#bio h1 {
+  font-size: 40px;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+#bio p {
+  font-size: 20px;
+}
+
+/* Style the portfolio section */
+#portfolio {
+  background-color: #000e1b;
+  color: white;
+}
+#portfolio h1 {
+  font-size: 40px;
+  padding-top: 20px;
+  padding-left: 100px;
+  margin-bottom: 20px;
+}
+.portfolio-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 10px;
+}
+
+#portfolio-img {
+  width: 250px;
+  height: auto;
+}
+
+.works {
+  margin-bottom: 50px;
+  padding-left: 100px;
+}
+.works h4 {
+  font-size: 30px;
+}
+
+/* Style the contact page */
+.contact-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  column-gap: 200px;
+  text-align: center;
+}
+#contact {
+  background-color: #ececec;
+  height: 35vh;
+}
+#contact h1 {
+  font-size: 40px;
+  padding-top: 20px;
+  padding-left: 100px;
+  margin-bottom: 50px;
+}
+#contact i {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.contacts h4 {
+  font-size: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 1530px) {
+  #profile-img {
+    width: 300px;
+    height: 350px;
+    padding-right: 40px;
+  }
+  .intro-blurb {
+    padding-right: 250px;
+  }
+}
+@media (max-width: 1300px) {
+  .intro-blurb {
+    padding-right: 100px;
+    margin-top: 60px;
+  }
+  #intro-header h1 {
+    font-size: 50px;
+  }
+  #intro-header h2 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 1460px) {
+  .portfolio-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 980px) {
+  #profile-img {
+    width: 300px;
+    height: 350px;
+    padding-right: 30px;
+  }
+  .intro-blurb {
+    padding-right: 100px;
+    margin-top: 40px;
+  }
+  #intro-header h1 {
+    font-size: 30px;
+  }
+  #intro-header h2 {
+    font-size: 40px;
+  }
+  #resumeBtn {
+    font-size: 15px;
+  }
+  #bio {
+    height: 40vh;
+  }
+  #bio h1 {
+    font-size: 30px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+  #bio p {
+    font-size: 15px;
+  }
+  .contact-container {
+    column-gap: 100px;
+  }
+}
+
+@media (max-width: 780px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+  .contact-container {
+    column-gap: 70px;
+  }
+}
+
+@media (max-width: 670px) {
+  .intro-blurb {
+    margin-top: 20px;
+    padding-right: 50px;
+  }
+  #profile-img {
+    width: 300px;
+    height: 350px;
+    padding-right: 80px;
+  }
+
+  #intro-header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  #intro-header h2 {
+    font-size: 20px;
+  }
+  #resumeBtn {
+    font-size: 15px;
+  }
+  .contact-container {
+    column-gap: 50px;
+  }
+  #contact i {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .contacts h4 {
+    font-size: 15px;
+  }
+  .intro-blurb {
+    padding-left: 50px;
+  }
+  #bio h1,
+  #bio p {
+    padding-left: 50px;
+  }
+  #portfolio h1 {
+    padding-left: 50px;
+  }
+  #contacts h1 {
+    padding-left: 50px;
+  }
+}
