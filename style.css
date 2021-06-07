@@ -131,6 +131,15 @@ html {
   font-size: 30px;
 }
 
+#workBtn{
+    font-size: 15px;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
 /* Style the contact page */
 .contact-container {
   display: grid;
@@ -273,5 +282,8 @@ html {
   }
   #contacts h1 {
     padding-left: 50px;
+  }
+  .nav-links li a {
+    padding: 10px;
   }
 }
